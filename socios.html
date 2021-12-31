@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herederos - Socios</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    
+    <header>
+      <img
+        src="./images/escudobaby.png"
+        alt="escudoheredero"
+        class="escudo-heredero"
+      />
+      <h1>herederos baby</h1>
+    </header>
+
+    <button type="menu" class="btn_menu">MENU</button>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html" class="menu">HOME</a></li>
+        <li><a href="socios.html" class="menu">SOCIOS</a></li>
+        <li><a href="predio.html" class="menu">PREDIO</a></li>
+      </ul>
+    </nav>
+
+    
+    <h2>tarifa de socios</h2>
+
+    <div class="tabla-publicidad">
+      <table>
+        <thead>
+          <tr>
+            <th>categoria</th>
+            <th>cuota</th>
+            <th>condicion</th>
+            <th>beneficios</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>activo</td>
+          <td>$800</td>
+          <td>mayor de 18 años</td>
+          <td class="beneficios">2 partidos de local gratis al mes</td>
+        </tr>
+        <tr>
+          <td>adherentes</td>
+          <td>$600</td>
+          <td>mayor de 18 años</td>
+          <td class="beneficios">50% de descuento en la entrada por partido</td>
+        </tr>
+        <tr>
+          <td>caballeros</td>
+          <td>$400</td>
+          <td>mayor de 18 años</td>
+          <td class="beneficios">20% de descuento en entrada general</td>
+        </tr>
+        <tr>
+          <td>damas</td>
+          <td>$200</td>
+          <td>mayor de 18 años</td>
+          <td class="beneficios">20% de descuento en entrada general</td>
+        </tr>
+        <tr>
+          <td>menor</td>
+          <td>$100</td>
+          <td>menor de 5 años</td>
+          <td class="beneficios">entrada gratis a cualquier partido</td>
+        </tr>
+      </table>
+    </div>
+
+    
+      <h2>Sumate como socio</h2>
+      <form id="formulario-completo">
+        <div>
+          <div>
+            <label>Nombre:</label>
+            <input class="nombre" id="nombre" type="text" />
+          </div>
+          <div>
+            <label>Telefono de contacto:</label>
+            <input class="telefono" id="telefono" type="text" />
+          </div>
+          <div>
+            <label>Email:</label>
+            <input class="email" id="email" type="email" />
+          </div>
+          <div>
+            <label>Mensaje:</label>
+            <textarea class="mensaje" id="mensaje-socio"></textarea>
+          </div>
+          <div>
+            <label
+              >Resolver Captcha <span id="valor1">x1</span> +
+              <span id="valor2">x2</span>=</label
+            >
+            <input class="captcha" id="captcha" type="text" />
+          </div>
+          <div>
+            <input
+              class="btn-enviar"
+              id="revisarcaptcha"
+              type="submit"
+              value="ENVIAR"
+            />
+          </div>
+          <div>
+            <p class="mensaje-captcha" id="mensaje-captcha"></p>
+            <p class="mensaje-formulario" id="mensaje-formulario"></p>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+    
+      <h2>Encargate tu camiseta</h2>
+    <div class="cargarJugador">
+      <div>
+        <div class="inputsColumnas">
+          <label>Nombre: </label>
+          <input type="text" id="nombreJugador" />
+          <label>Numero: </label>
+          <input type="number" id="numeroCamiseta" />
+        </div>
+        <div class="inputsColumnas">
+          <label>Categoria:</label>
+          <select name="numero" id="categoria">
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+          </select>
+        </div>
+        <div class="inputsColumnas">
+          <button id="btn-enviar" class="botonesNuevos">Enviar</button>
+        </div>
+
+        <p id="mensaje"></p>
+      </div>
+
+      <div id="tablaDinamica" class="tablaDinamica">
+        <table >
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Numero</th>
+              <th>Categoria</th>
+              <th>Eliminar/Editar</th>
+            </tr>
+          </thead>
+          <tbody id="jugadoresCargados">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <p class="inputsFiltro">
+          Elige en numero de camiseta:
+          <input type="number" id="numeroCamisetaFiltro" />
+          <button id="btn-filtrar" class="botonesNuevos">Filtrar</button>
+        </p>
+        
+      </div>
+    </div>
+
+   
+
+    <figure>
+      <img
+        class="img-publicidad"
+        src="./images/santander.png"
+        alt="publicidad"
+      />
+      <img
+        class="img-publicidad"
+        src="./images/publicidad2.jpg"
+        alt="publicidad"
+      />
+      <img
+        class="img-publicidad"
+        src="./images/publicidad3.png"
+        alt="publicidad"
+      />
+      <img
+        class="img-publicidad"
+        src="./images/publicidad4.png"
+        alt="publicidad"
+      />
+    </figure>
+
+
+    <footer>
+      <div class="redes-sociales">
+        <img class="img-redes" src="./images/redes.png" alt="redes-sociales" />
+        <p>INSTAGRAM: @herederosbaby</p>
+        <p>FACEBOOK: Herederosdelbuenfutbol</p>
+      </div>
+      <div class="telefonos">
+        <h3>contactanos</h3>
+        <p>Natanael Cuestas: 2494333026</p>
+        <p>Lorena Palahi: 2494641881</p>
+      </div>
+    </footer>
+
+    <script src="./js/captcha.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/tabla.js"></script>
+    
+  </body>
+</html>
